@@ -2,9 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Sriracha&display=swap');
 
-/*font-family: 'Passion One', cursive;
-font-family: 'Sriracha', cursive;*/
-
 :root {
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font2:'Passion One', cursive;
@@ -49,27 +46,43 @@ header a:hover, footer a:hover{
 
 section{
     font-family: var(--font3);
-    font-size: 3.5vw;
+    font-size: clamp(20px,3vw,50px);
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
-
 }
-.normal {
+section > p {
+    padding-bottom: 2em;
+}
+section.normal {
     background-color: white;
     color: black;
 }
-.imagem {
-    background-color: rgb(71, 71, 71);
+
+section.imagem {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.363);
+    background-color: rgb(51, 51, 51);
     color: white;
+    background-size: cover;
+    background-attachment: fixed;
 }
-.imagem > p {
-    background-color: rgba(0, 0, 0, 0.247);
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
-
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right;
+    
+}
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right;
+    background-size: cover;
+}
  
 footer {
     background-color: black;
