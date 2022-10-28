@@ -34,7 +34,7 @@
         width: 950px;
     }
 
-    section#login >div#imagem {
+    section#login > div#imagem {
         float: right;
         width: 50%;
         height: 100%;
